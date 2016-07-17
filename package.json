@@ -7,6 +7,9 @@
     "gulp-connect": "latest",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "latest",
-    "gulp-util": "latest"
+    "gulp-util": "latest",
+    "gulp-jade": "latest",
+    "pump": "latest",
+    "gulp-webserver": "latest"
   }
 }
