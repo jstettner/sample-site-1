@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest"
+  }
+}
