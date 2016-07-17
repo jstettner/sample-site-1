@@ -11,5 +11,6 @@
     "gulp-jade": "latest",
     "pump": "latest",
     "gulp-webserver": "latest"
+    "copy": "latest"
   }
 }

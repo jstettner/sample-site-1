@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var pump = require('pump');
 var webserver = require('gulp-webserver');
+var copy = require('copy');
 
 
 gulp.task('compress', function (cb) {
@@ -54,5 +55,12 @@ gulp.task('start', function () {
     }));
 });
 
+gulp.task('copy', function(){
+
+     gulp.src('./bootstrap/**/*.*')
+    .pipe(gulp.dest('./dist/app/'));
+});
+
 gulp.task('default', ['build' , 'watch' , 'start']);
 gulp.task('build', ['minify-css' , 'sass' , 'compress' , 'templates']);
+gulp.task('strap', ['copy']);
