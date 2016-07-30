@@ -10,7 +10,7 @@ var copy = require('copy');
 
 gulp.task('compress', function (cb) {
   pump([
-        gulp.src('./app/js/*.js'),
+        gulp.src('./app/js/**/*.js'),
         uglify(),
         gulp.dest('./dist/app/js')
     ],

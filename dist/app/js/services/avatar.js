@@ -1,0 +1,1 @@
+myApp.factory("avatar",["$http",function(t){return t.get("https://api.adorable.io/avatars/default").success(function(t){return t}).error(function(t){return t})}]);

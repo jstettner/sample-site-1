@@ -8,6 +8,19 @@
   </head>
 </html>
 <body class="home container">
-  <h1>Zathcom</h1>
-  <h2>Bottom</h2>
+  <div ng-app="myApp" ng-cloak>
+    <div ng-controller="controller1" class="container center-text">
+      <h1>Zathcom Industries</h1>
+      <h2>Industrial Avatar Generator</h2>
+      <input type="text" placeholder="Enter a Name or Phrase" ng-model="userPhrase" class="width-50">
+      <p>{{avaroot+userPhrase}}</p><img ng-src="https://api.adorable.io/avatars/{{userPhrase}}" alt="AVATAR">
+    </div>
+  </div>
+  <script src="/app/js/angular.min.js"></script>
+  <script src="/app/js/app.js"></script>
+  <!--controllers-->
+  <script src="/app/js/controllers/controller1.js"></script>
+  <!--directives-->
+  <!--services-->
+  <script src="/app/js/services/avatar.js"></script>
 </body>
