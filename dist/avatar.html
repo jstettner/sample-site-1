@@ -1,0 +1,8 @@
+
+<div ng-controller="avatarCtrl" class="avatar container center-text">
+  <h2>Industrial Avatar Generator</h2>
+  <form name="avaForm">
+    <input type="text" name="phrase" autocomplete="off" placeholder="Enter a Name or Phrase" ng-model="userPhrase" ng-model-options="{debounce: 255}" class="width-50"/>
+  </form>
+  <p>Pulling from: {{avaroot+userPhrase | urlcombine}}</p><img ng-show="avaForm.phrase.$viewValue.length &gt; 0" ng-src="https://api.adorable.io/avatars/{{userPhrase | urlcombine}}" alt="AVATAR" class="pbml"/>
+</div>

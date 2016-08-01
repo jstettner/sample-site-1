@@ -1,4 +1,10 @@
-.home img {
-  height: 500px;
-  width: 500px;
+.home .avatar {
+  background-color: #C93D0E;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+  }
 }

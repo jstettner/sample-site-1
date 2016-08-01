@@ -1,13 +1,8 @@
-- var title="Zathcom"
+- var title='Zathcom > Avatars'
 
 include partials/head
 
-body.home.container
-  div(ng-app="myApp" ng-cloak)
-    div.container.center-text(ng-controller="controller1")
-      h1 Zathcom Industries
-      h2 Industrial Avatar Generator
-      input.width-50(type="text" placeholder="Enter a Name or Phrase" ng-model="userPhrase")
-      p {{avaroot+userPhrase}}
-      img(ng-src="https://api.adorable.io/avatars/{{userPhrase}}" alt="AVATAR")
+body.home(ng-cloak)
+  header(ng-include="'partials/nav.html'")
+  div(ui-view)
   include partials/footer

@@ -6,6 +6,14 @@ var jade = require('gulp-jade');
 var pump = require('pump');
 var webserver = require('gulp-webserver');
 var copy = require('copy');
+var imagemin = require('gulp-imagemin');
+
+
+gulp.task('imgmin', () =>
+	gulp.src('./app/images/**')
+		.pipe(imagemin())
+		.pipe(gulp.dest('./dist/app/images'))
+);
 
 
 gulp.task('compress', function (cb) {
@@ -32,7 +40,7 @@ gulp.task('sass', function () {
 
 
 gulp.task('templates', function () {
-  gulp.src('./app/views/*.jade')
+  gulp.src('./app/views/**/*.jade')
     .pipe(jade({
       pretty: true
     }))
@@ -62,5 +70,5 @@ gulp.task('copy', function(){
 });
 
 gulp.task('default', ['build' , 'watch' , 'start']);
-gulp.task('build', ['minify-css' , 'sass' , 'compress' , 'templates']);
+gulp.task('build', ['minify-css' , 'sass' , 'compress' , 'templates', 'imgmin']);
 gulp.task('strap', ['copy']);

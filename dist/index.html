@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
   <head>
-    <title>Zathcom</title>
+    <title>Zathcom &gt; Avatars</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/app/css/style.css">
     <link rel="stylesheet" href="/app/css/bootstrap.min.css">
   </head>
 </html>
-<body class="home container">
-  <div ng-app="myApp" ng-cloak>
-    <div ng-controller="controller1" class="container center-text">
-      <h1>Zathcom Industries</h1>
-      <h2>Industrial Avatar Generator</h2>
-      <input type="text" placeholder="Enter a Name or Phrase" ng-model="userPhrase" class="width-50">
-      <p>{{avaroot+userPhrase}}</p><img ng-src="https://api.adorable.io/avatars/{{userPhrase}}" alt="AVATAR">
-    </div>
-  </div>
+<body ng-cloak class="home">
+  <header ng-include="'partials/nav.html'"></header>
+  <div ui-view></div>
   <script src="/app/js/angular.min.js"></script>
+  <script src="/app/js/angular-ui-router.min.js"></script>
   <script src="/app/js/app.js"></script>
   <!--controllers-->
   <script src="/app/js/controllers/controller1.js"></script>
   <!--directives-->
   <!--services-->
   <script src="/app/js/services/avatar.js"></script>
+  <!--filters-->
+  <script src="/app/js/filters/urlcombine.js"></script>
 </body>

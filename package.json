@@ -10,7 +10,11 @@
     "gulp-util": "latest",
     "gulp-jade": "latest",
     "pump": "latest",
-    "gulp-webserver": "latest"
-    "copy": "latest"
+    "gulp-webserver": "latest",
+    "copy": "latest",
+    "gulp-imagemin": "latest"
+  },
+  "dependencies": {
+    "imagemin": "^5.2.2"
   }
 }

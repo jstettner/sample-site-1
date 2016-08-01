@@ -1,6 +1,9 @@
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }
 
+body {
+  background-color: #CF4C21 !important; }
+
 .flex-0 {
   width: 100%;
   -ms-flex: 0 0 auto; }
@@ -502,6 +505,17 @@
 .width-20 {
   width: 20%; }
 
-.home img {
-  height: 500px;
-  width: 500px; }
+.home .avatar {
+  background-color: #C93D0E;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em; }
+  .home .avatar img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%; }
+
+header {
+  background-color: #C43100; }
+
+header .flex-row {
+  height: 90px; }
