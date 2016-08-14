@@ -1,8 +1,47 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/montserrat/Montserrat-Hairline.otf");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/montserrat/Montserrat-UltraLight.otf");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/montserrat/Montserrat-Light.otf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/montserrat/Montserrat-Regular.otf");
+  font-weight: 400;
+  font-style: normal; }
+
+.color-white {
+  color: white !important; }
+
+.color-black {
+  color: black !important; }
+
+.home h1 {
+  font-family: Montserrat;
+  font-weight: 300; }
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }
 
 body {
-  background-color: #CF4C21 !important; }
+  background-color: #29b6f6 !important; }
+
+.content {
+  background-color: #03a9f4;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em; }
 
 .flex-0 {
   width: 100%;
@@ -505,17 +544,13 @@ body {
 .width-20 {
   width: 20%; }
 
-.home .avatar {
-  background-color: #C93D0E;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em; }
-  .home .avatar img {
-    height: 500px;
-    width: 500px;
-    border-radius: 50%; }
+.home .avatar img {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%; }
 
 header {
-  background-color: #C43100; }
+  background-color: #039be5; }
 
 header .flex-row {
   height: 90px; }

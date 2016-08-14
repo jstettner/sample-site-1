@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="/app/css/bootstrap.min.css">
   </head>
 </html>
-<body ng-cloak class="home">
+<body ng-cloak>
   <header ng-include="'partials/nav.html'"></header>
-  <div ui-view></div>
+  <div ui-view class="content container"></div>
   <script src="/app/js/angular.min.js"></script>
   <script src="/app/js/angular-ui-router.min.js"></script>
   <script src="/app/js/app.js"></script>
   <!--controllers-->
-  <script src="/app/js/controllers/controller1.js"></script>
+  <script src="/app/js/controllers/homeCtrl.js"></script>
+  <script src="/app/js/controllers/avatarCtrl.js"></script>
   <!--directives-->
+  <script src="/app/js/directives/applisting.js"></script>
   <!--services-->
   <script src="/app/js/services/avatar.js"></script>
   <!--filters-->

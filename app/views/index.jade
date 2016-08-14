@@ -2,7 +2,7 @@
 
 include partials/head
 
-body.home(ng-cloak)
+body(ng-cloak)
   header(ng-include="'partials/nav.html'")
-  div(ui-view)
+  div.content.container(ui-view)
   include partials/footer

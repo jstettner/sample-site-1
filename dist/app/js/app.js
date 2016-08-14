@@ -1,1 +1,1 @@
-var myApp=angular.module("myApp",["ui.router"]).config(["$urlRouterProvider","$stateProvider",function(r,e){r.otherwise("/")}]);
+var myApp=angular.module("myApp",["ui.router"]).config(["$urlRouterProvider","$stateProvider",function(e,r){e.otherwise("/"),r.state("home",{url:"/",templateUrl:"templates/home.html",controller:"homeCtrl"})}]);
