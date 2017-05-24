@@ -2,6 +2,8 @@
 
 ### Run Local App
 
+Sample angular project with a few sample pages/modules.
+
 Clone repo and download app dependencies
 
     $ git clone https://github.com/c18js/sample-site-1
